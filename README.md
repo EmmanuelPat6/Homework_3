@@ -73,11 +73,11 @@ This README file will show the instructions on how to build and run the Homework
     ```
     selecting the topic `/aruco_single/result`
 
-4. An instruction to do the **Positioning Task** in order to align the **Camera** to the **ArUco Marker** with a desired **Position and Orientation Offsets**
+4. 🚀📍An instruction to do the **Positioning Task** in order to align the **Camera** to the **ArUco Marker** with a desired **Position and Orientation Offsets**
    ```shell
     ros2 run ros2_kdl_package ros2_kdl_node_vision_control 
     ```
-5. After that the **Positioning** is completed (wait the message `Positioning Task Executed Successfully ...`) it is possible to run in this last terminal, after pressing `ctrl+C`, the final instruction
+5. 👀🎯After that the **Positioning** is completed (wait the message `Positioning Task Executed Successfully ...`) it is possible to run in this last terminal, after pressing `ctrl+C`, the final instruction
    ```shell
     ros2 run ros2_kdl_package ros2_kdl_node_vision_control --ros-args -p task:=look-at-point
     ```
