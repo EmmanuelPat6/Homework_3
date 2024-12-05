@@ -122,6 +122,6 @@ this because in the **Dockerfile** is specified only `src` but when you download
    ```shell
     ros2 run ros2_kdl_package ros2_kdl_node_vision_effort_control --ros-args -p task:=look-at-point
     ```
-   which, using a new **Orientation Error** given by `sd-s`, implement the **Linear Trajectory** implemented in the previous Homework but looking, during it, the **ArUco Tag**
+   which, using a new **Orientation Error** given by `sd-s`, implement the **Linear Trajectory** implemented in the previous Homework but looking, during it, the **ArUco Tag**. It is advisable not to run this instruction after the               positioning but to re-execute the initial instructions and respawn the robot in its initial position.
 
 To implement these last two points with the **Operational Space Inverse Dynamics Control** it is sufficient to add at teh end of each instruction `-p cmd_interface:=cart_effort`
