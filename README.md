@@ -30,11 +30,14 @@ This README file will show the instructions on how to build and run the Homework
     source install/setup.bash
     ```
 **NOTE**: To make life easier, a world in Gazebo with *zero gravity* has been used in order to compensate the gravity itself. For this reason, in the controller it is no more necessary to explicitly have the *Gravity Compensation Term* of the *PD+ Controller*.
+
 ⚠️⚠️⚠️ If the next instruction give some problems, run
 ```shell
 export GZ_SIM_RESOURCE_PATH=~/ros2_ws/src/Homework_3/ros2_iiwa/iiwa_description/gazebo/models
 ```
-this because in the **Dockerfile** is specified only `src` but when you download my Repository, you download all in anoter directory called `Homework_3`⚠️⚠️⚠️
+this because in the **Dockerfile** is specified only `src` but when you download my Repository, you download all in anoter directory called `Homework_3`
+
+⚠️⚠️⚠️
 ## Implementation 💻
 ### Spherical Object Detection  
 
