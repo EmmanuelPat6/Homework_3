@@ -33,7 +33,7 @@ This README file will show the instructions on how to build and run the Homework
 
 ⚠️⚠️⚠️
 
-If the next instruction give some problems, run
+If the launch of the world in Gazebo gives some problems and errors, run
 ```shell
 export GZ_SIM_RESOURCE_PATH=~/ros2_ws/src/Homework_3/ros2_iiwa/iiwa_description/gazebo/models
 ```
