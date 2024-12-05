@@ -82,4 +82,36 @@ This README file will show the instructions on how to build and run the Homework
     ros2 run ros2_kdl_package ros2_kdl_node_vision_control --ros-args -p task:=look-at-point
     ```
    which performs a **Look-at-Point Task** using a desired **Control Law** specified in the code and in the report. Now it is possible to move the ArUco Tag with the realtive interface and the center of the **Camera Sensor** will align with      the center of the Tag.
- 
+
+ ### Vision-Based Control with Effort Commands 🏎📷
+
+1. 🤖🤖 An instruction to spawn the robot in Gazebo inside the world containing the **ArUco Tag 201** with a **Effort Controller**
+    ```shell
+    ros2 launch iiwa_bringup iiwa.launch.py command_interface:="effort" robot_controller:="effort_controller" use_sim:=true use_vision:=true
+    ```
+    `command_interface:="velocity"` and `robot_controller:="velocity_controller"` to spawn the robot with a **Velocity Interfare** and a **Velocity Controller**, `use_sim:=true` to spawn the robot in Gazebo and `use_vision:=true` to spawn the robot with a **Camera Sensor**
+
+⚠️⚠️⚠️ It is **NECESSARY** to act very quickly by pressing the play button in the bottom left corner to ensure the controllers are activated. If this is not done, you will need to close Gazebo, reissue the same command, and repeat the steps. ⚠️⚠️⚠️
+
+2. 📐📏 An istruction to allow the **ArUco Tag 201 Detection**  
+    ```shell
+    ros2 launch aruco_ros single.launch.py 
+    ```
+   
+3. 🗺️📸 An istruction to see the environment with the **ArUco Detection** through the **Camera Sensor**
+    ```shell
+    ros2 run rqt_image_view rqt_image_view
+    ```
+    selecting the topic `/aruco_single/result`
+
+4. 🚀📍An instruction to do the **Positioning Task** in order to align the **Camera** to the **ArUco Marker** with a desired **Position and Orientation Offsets**
+   ```shell
+    ros2 run ros2_kdl_package ros2_kdl_node_vision_effort_control --ros-args -p task:=positioning
+    ```
+5. 👀📏An instruction to do the **Look-at-Point Task** with a **Linear Trajectory**
+   ```shell
+    ros2 run ros2_kdl_package ros2_kdl_node_vision_effort_control --ros-args -p task:=look-at-point
+    ```
+   which, using a new **Orientation Error** given by `sd-s`, implement the **Linear Trajectory** implemented in the previous Homework but looking, during it, the **ArUco Tag**
+
+To implement these last two points with the **Operational Space Inverse Dynamics Control** it is sufficient to add at teh end of each instruction `-p cmd_interface:=cart_effort`
