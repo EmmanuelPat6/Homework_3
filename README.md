@@ -81,5 +81,5 @@ This README file will show the instructions on how to build and run the Homework
    ```shell
     ros2 run ros2_kdl_package ros2_kdl_node_vision_control --ros-args -p task:=look-at-point
     ```
-   which performs a **Look-at-Point Task** using a desired **Control Law** specified in the code and in the report
+   which performs a **Look-at-Point Task** using a desired **Control Law** specified in the code and in the report. Now it is possible to move the ArUco Tag with the realtive interface and the center of the **Camera Sensor** will align with      the center of the Tag.
  
