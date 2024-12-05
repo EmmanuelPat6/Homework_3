@@ -35,7 +35,7 @@ This README file will show the instructions on how to build and run the Homework
 
 1. 🤖🤖 An instruction to spawn the robot in Gazebo inside the world containing the **Spherical Object**
     ```shell
-    ros2 launch iiwa_bringup iiwa_sphere.launch.py use_sim:=true use_vision:=true"
+    ros2 launch iiwa_bringup iiwa_sphere.launch.py use_sim:=true use_vision:=true
     ```
     `use_sim:=true` to spawn the robot in Gazebo and `use_vision:=true` to spawn the robot with a **Camera Sensor**
 
