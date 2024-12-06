@@ -514,7 +514,7 @@ class VisionBasedEffortControlNode : public rclcpp::Node
 
 
                 
-                    joint_efforts_.data = controller_.idCntr(cartpos, des_vel, des_acc, 170, 70, 60, 50);
+                    joint_efforts_.data = controller_.idCntr(cartpos, des_vel, des_acc, 150, 75, 35, 10);
 
                 }
                 
