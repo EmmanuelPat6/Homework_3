@@ -94,6 +94,7 @@ this because in the **Dockerfile** is specified only `src` but when you download
    which performs a **Look-at-Point Task** using a desired **Control Law** specified in the code and in the report. Now it is possible to move the ArUco Tag with the realtive interface and the center of the **Camera Sensor** will align with      the center of the Tag.
 
  ### Vision-Based Control with Effort Commands 🏎📷
+For this another file called `ros2_kdl_vision_effort_control.cpp` has been implemented.
 
 1. 🤖🤖 An instruction to spawn the robot in Gazebo inside the world containing the **ArUco Tag 201** with a **Effort Controller**
     ```shell
