@@ -62,7 +62,7 @@ this because in the **Dockerfile** is specified only `src` but when you download
     ros2 run ros2_opencv ros2_opencv_node
     ```
     
-### Vision-Based Control with Velocity Commands 🏎📷
+### Vision-Based Control with Velocity Commands 🦾📷
 
 1. 🤖🤖 An instruction to spawn the robot in Gazebo inside the world containing the **ArUco Tag 201** with a **Velocity Controller**
     ```shell
