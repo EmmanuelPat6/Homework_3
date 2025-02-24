@@ -21,7 +21,7 @@ This README file will show the instructions on how to build and run the Homework
 2. Clone this repo in your `src` folder inside the `ros2_ws`
     ```shell
     cd src
-    git clone https://github.com/EmmanuelPat6/Homework_3.git
+    git clone https://github.com/EmmanuelPat6/Robotics_Lab_Homework_3.git
     ```
 3. Build the packages and make them visible to your workspace
     ```shell
